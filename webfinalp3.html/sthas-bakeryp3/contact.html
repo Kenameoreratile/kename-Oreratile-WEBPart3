@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact & Enquiry | Stha's Bakery – Kuruman, Northern Cape</title>
+    <meta name="description" content="Contact Stha's Bakery in Magojaneng, Kuruman. Phone 081 678 4431 or email sthasbakery@gmail.com. Find us on the map and send an enquiry for scones and biscuits.">
+    <meta name="keywords" content="contact Stha's Bakery, order biscuits Kuruman, Magojaneng bakery, enquiry form, bakery map">
+    <meta name="author" content="Stha's Bakery">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="contact.html">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Stha's Bakery</h1>
+        <img src="Logo.jpeg" width="100" alt="Stha's Bakery logo - homemade biscuits and scones" title="Stha's Bakery Logo">
+        <p>Freshly Baked With Love</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="products.html">Products</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html" class="active">Contact</a>
+    </nav>
+
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p class="section-intro">
+            We are based in Magojaneng, Kuruman, Northern Cape. Use the details below,
+            the map, or the enquiry form to get in touch about orders for home, ceremonies
+            or special events.
+        </p>
+
+        <div class="contact-details">
+            <p><strong>Business name:</strong> Stha's Bakery</p>
+            <p><strong>Location:</strong> 135 Credo Str  Magojaneng, Kuruman, Northern Cape, South Africa</p>
+            <p><strong>Phone:</strong> <a href="tel:0816784431">081 678 4431</a></p>
+            <p><strong>Email:</strong> <a href="mailto:sthasbakery@gmail.com">sthasbakery@gmail.com</a></p>
+            <p><strong>Hours:</strong> Orders by appointment – please call or message to arrange collection</p>
+        </div>
+
+        <p>
+            We would love to hear from you and help you with your bakery order.
+            For larger ceremony or event packages, contact us a few days in advance
+            so we can plan baking and collection times.
+        </p>
+    </section>
+
+    <!-- Automatic embedded map – Magojaneng / Kuruman -->
+    <section class="map-section">
+        <h2>Find Us on the Map</h2>
+        <p class="section-intro">Magojaneng, Kuruman, Northern Cape – our bakery location.</p>
+        <div class="map-container">
+            <iframe
+                title="Map of Magojaneng, Kuruman – Stha's Bakery location"
+                src="https://maps.google.com/maps?q=Magojaneng,Kuruman,Northern+Cape,South+Africa&t=&z=14&ie=UTF8&iwloc=&output=embed"
+                width="100%"
+                height="400"
+                style="border:0; border-radius: 10px;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+        <p class="map-note">
+            <a href="https://www.google.com/maps/search/?api=1&query=Magojaneng+Kuruman+Northern+Cape" target="_blank" rel="noopener noreferrer">
+                Open in Google Maps
+            </a>
+            for directions from your location.
+        </p>
+    </section>
+
+    <section id="enquiry" class="enquiry">
+        <h2>Make an Enquiry</h2>
+        <p class="form-intro">
+            Fill in the form below to request scones, biscuits or a bakery package.
+            Required fields are marked with *. We will respond by phone or email.
+        </p>
+
+        <form id="enquiryForm" action="#" method="post" novalidate>
+            <label for="name">Full Name *</label>
+            <input type="text" id="name" name="name"
+                   placeholder="Enter your full name" required
+                   minlength="2" maxlength="80">
+            <span class="error-message" id="nameError"></span>
+
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" name="email"
+                   placeholder="Enter your email" required>
+            <span class="error-message" id="emailError"></span>
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone"
+                   placeholder="e.g. 081 678 4431"
+                   pattern="[0-9\s\-\+]{10,15}">
+            <span class="error-message" id="phoneError"></span>
+
+            <label for="product">Product *</label>
+            <select id="product" name="product" required>
+                <option value="">Select a product</option>
+                <option value="scones">Fresh Scones</option>
+                <option value="biscuits">Homemade Biscuits (lemon / ginger / vanilla)</option>
+                <option value="package">Bakery Package (ceremony / event)</option>
+                <option value="mixed">Mixed order (scones + biscuits)</option>
+            </select>
+            <span class="error-message" id="productError"></span>
+
+            <label for="quantity">Approximate Quantity</label>
+            <input type="number" id="quantity" name="quantity"
+                   placeholder="e.g. 50" min="1" max="1000">
+            <span class="error-message" id="quantityError"></span>
+
+            <label for="date">Preferred Collection Date</label>
+            <input type="date" id="date" name="date">
+            <span class="error-message" id="dateError"></span>
+
+            <label for="message">Message *</label>
+            <textarea id="message" name="message"
+                      placeholder="Write your enquiry here – flavours, event type (ceremony, funeral, unveiling, tea), number of guests, or any special requests."
+                      rows="5" required minlength="10" maxlength="500"></textarea>
+            <span class="error-message" id="messageError"></span>
+
+            <input type="submit" value="Send Enquiry">
+            <p id="formSuccess" class="form-success" hidden>Thank you! Your enquiry has been received. We will contact you soon on the details you provided.</p>
+            <p id="formStatus" class="form-status" aria-live="polite"></p>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Stha's Bakery</p>
+        <p>Freshly Baked With Love | Magojaneng, Kuruman, Northern Cape</p>
+        <p>Created by ST10491101 KENAME ORERATILE</p>
+        <p><a href="references.html" style="color:#ffd27f;">References</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

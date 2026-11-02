@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Products | Stha's Bakery – Scones & Homemade Biscuits</title>
+    <meta name="description" content="Browse Stha's Bakery products: fresh scones, lemon biscuits, ginger biscuits, vanilla biscuits and bakery packages for ceremonies in Kuruman.">
+    <meta name="keywords" content="scones, biscuits, lemon biscuits, ginger biscuits, vanilla biscuits, bakery packages, Kuruman">
+    <meta name="author" content="Stha's Bakery">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="products.html">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Stha's Bakery</h1>
+        <img src="Logo.jpeg" width="100" alt="Stha's Bakery logo - homemade biscuits and scones" title="Stha's Bakery Logo">
+        <p>Freshly Baked With Love</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="products.html" class="active">Products</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <section id="products" class="products">
+        <h2>Our Products</h2>
+        <p class="section-intro">Homemade biscuits in different flavours and soft, freshly baked scones – perfect for home and special occasions. Click any image to view it larger.</p>
+
+        <!-- Dynamic search + filter -->
+        <div class="filter-section-inner">
+            <label for="productSearch" class="sr-only">Search products</label>
+            <input type="text" id="productSearch" placeholder="Search products (e.g. ginger, scones)..." class="search-input">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="scones">Scones</button>
+                <button class="filter-btn" data-filter="biscuits">Biscuits</button>
+                <button class="filter-btn" data-filter="packages">Packages</button>
+            </div>
+        </div>
+
+        <div class="product-container filterable" id="productGallery">
+            <div class="product" data-category="scones" data-name="fresh scones">
+                <img src="Scones.jpeg" alt="Fresh homemade scones in a wicker basket with jam and cream" title="Fresh Homemade Scones" class="gallery-img" data-full="Scones.jpeg">
+                <h3>Fresh Scones</h3>
+                <p>Soft and freshly baked scones perfect for breakfast, tea time and special occasions.</p>
+            </div>
+
+            <div class="product" data-category="biscuits" data-name="vanilla biscuits chocolate">
+                <img src="vanilla.jpeg" alt="Vanilla biscuits with chocolate drizzle in a clear container" title="Vanilla Biscuits with Chocolate" class="gallery-img" data-full="vanilla.jpeg">
+                <h3>Vanilla Biscuits</h3>
+                <p>Delicious vanilla flavoured homemade biscuits, often finished with a light chocolate drizzle.</p>
+            </div>
+
+            <div class="product" data-category="biscuits" data-name="lemon biscuits flower">
+                <img src="Lemon.jpeg" alt="Lemon flower-shaped biscuits with red centre decoration" title="Lemon Flower Biscuits" class="gallery-img" data-full="Lemon.jpeg">
+                <h3>Lemon Biscuits</h3>
+                <p>Light, citrusy lemon biscuits shaped like flowers – ideal for tea and special gatherings.</p>
+            </div>
+
+            <div class="product" data-category="biscuits" data-name="ginger biscuits">
+                <img src="Ginger.jpeg" alt="Ginger biscuits with classic ridged pattern in a container" title="Ginger Biscuits" class="gallery-img" data-full="Ginger.jpeg">
+                <h3>Ginger Biscuits</h3>
+                <p>Warm ginger flavoured biscuits with a classic ridged design – a favourite for many customers.</p>
+            </div>
+
+            <div class="product" data-category="packages" data-name="bakery packages events">
+               
+                <h3>Bakery Packages</h3>
+                <img src="prize  lizt.jpeg" alt="prise list">
+                <p>Bakery packages prepared for ceremonies, gatherings and special events. Custom quantities available.</p>
+            </div>
+        </div>
+
+        <p id="noResults" class="no-results" hidden>No products match your search. Try a different word or category.</p>
+    </section>
+
+    <!-- Lightbox / Gallery Modal -->
+    <div id="lightbox" class="lightbox" hidden>
+        <button class="lightbox-close" aria-label="Close image viewer">&times;</button>
+        <button class="lightbox-prev" aria-label="Previous image">&#10094;</button>
+        <img id="lightboxImg" src="" alt="" title="">
+        <button class="lightbox-next" aria-label="Next image">&#10095;</button>
+        <p id="lightboxCaption" class="lightbox-caption"></p>
+    </div>
+
+    <section class="about-cta">
+        <h2>Want to Order?</h2>
+        <p>Tell us what you need – we will confirm flavours, quantities and collection.</p>
+        <a href="contact.html" class="button">Make an Enquiry</a>
+        <a href="services.html" class="button button-secondary">Our Services</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Stha's Bakery</p>
+        <p>Freshly Baked With Love | Magojaneng, Kuruman, Northern Cape</p>
+        <p>Created by ST10491101 KENAME ORERATILE</p>
+        <p><a href="references.html" style="color:#ffd27f;">References</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
